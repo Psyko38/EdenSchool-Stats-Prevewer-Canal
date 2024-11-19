@@ -1,72 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-body {
-	height: 100vh;
-	color: white;
-	font-family: inter;
+* {
+	font-family: Inter;
+	margin: 0;
+	padding: 0;
+}
+
+body{
 	background-color: black;
-	font-size: 2vmin;
-}
-
-.center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
-	flex-wrap: wrap;
-	height: 100%;
-}
-
-h1 {
-	font-size: 5vmin;
-}
-
-h2 {
-	font-size: 4vmin;
+	height: 100vh;
 }
 
 .page {
 	background: #1b1937;
+	color: white;
 	display: flex;
-	height: 80%;
-	border-radius: 2vmin;
+	flex-direction: row;
+	width: 1000px;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	transition: 1s;
+.p1,
+.p2 {
+	height: 305px;
 }
 
-.impo {
+.p1 > h1 > span {
 	color: #ab5cdb;
-	margin-right: 2vmin;
-	margin-left: 2vmin;
 }
 
-.text1,
-.text2 {
-	padding-bottom: 10vmin;
+.p1 > h1 {
+	padding-bottom: 20px;
 }
 
-.text1 {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.text2 {
-	color: #ffffff;
-}
-
-.image {
-	background: center no-repeat url("55a75cf7eb85a83d75c5d213ff6dd625.png");
-	height: 100%;
-	width: 100%;
-	background-blend-mode: multiply;
-	background-color: rgba(255, 0, 255, 0.863);
-	object-fit: cover;
-	border-top-right-radius: 2vmin;
-	border-bottom-right-radius: 2vmin;
+.p1 > p {
+	font-size: 0.8rem;
+	padding-bottom: 100px;
 }
 
 .info {
@@ -74,11 +42,24 @@ h2 {
 	justify-content: space-between;
 }
 
-.part1 {
-	width: 40%;
-	padding: 15vmin;
+.info1 > .name {
+	font-weight: bold;
 }
 
-.part2 {
-	width: 60%;
+.p2 {
+	width: 1000px;
+	background: center no-repeat url("55a75cf7eb85a83d75c5d213ff6dd625.png");
+	background-blend-mode: multiply;
+	background-color: rgba(255, 0, 255, 0.863);
+	object-fit: cover;
+}
+
+.p1 > h1 {
+	margin: 30px 0 0 30px;
+}
+.info {
+	margin: 0 30px 0 30px;
+}
+.p1 > p {
+	margin: 0 30px 0 30px;
 }
